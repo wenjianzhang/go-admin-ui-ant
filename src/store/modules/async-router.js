@@ -17,7 +17,6 @@ const permission = {
         path: '*', redirect: '/404', hidden: true
       }
 
-
       console.log(routers)
       state.addRouters = [routers, router404]
       state.routers = constantRouterMap.concat(routers)

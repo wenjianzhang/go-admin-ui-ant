@@ -21,9 +21,9 @@ export default {
   fixSiderbar: true, // sticky siderbar
   colorWeak: false,
   menu: {
-    locale: true
+    locale: false
   },
-  title: 'Ant Design Pro',
+  title: 'GO 后台管理系统',
   pwa: false,
   iconfontUrl: '',
   production: process.env.NODE_ENV === 'production' && process.env.VUE_APP_PREVIEW !== 'true'
