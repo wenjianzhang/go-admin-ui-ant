@@ -81,7 +81,7 @@ export const generatorDynamicRouter = (result) => {
         {
           path: '/account',
           component: RouteView,
-          redirect: '/account/center',
+          redirect: '/account/settings',
           name: 'account',
           hidden: true,
           meta: { title: '个人页', icon: 'user', keepAlive: true, permission: [ 'user' ] },

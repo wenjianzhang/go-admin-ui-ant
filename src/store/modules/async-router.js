@@ -16,8 +16,7 @@ const permission = {
       const router404 = {
         path: '*', redirect: '/404', hidden: true
       }
-
-      console.log(routers)
+      // console.log(JSON.stringify(routers))
       state.addRouters = [routers, router404]
       state.routers = constantRouterMap.concat(routers)
     }
@@ -25,7 +24,6 @@ const permission = {
   actions: {
     GenerateDynamicRoutes ({ commit }, data) {
       return new Promise(resolve => {
-        console.log(data)
         getRoutes().then(response => {
           if (response.code !== 200) {
             this.$message({

@@ -18,6 +18,10 @@ import './permission' // permission control
 import './utils/filter' // global filter
 import './global.less'
 
+import './utils/helper/drag'
+import permission from './utils/helper/permission/index'
+Vue.use(permission)
+
 Vue.config.productionTip = false
 
 // mount axios to `Vue.$http` and `this.$http`
